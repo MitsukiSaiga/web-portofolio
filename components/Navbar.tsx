@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 function Navbar() {
     return (
         <>
@@ -10,13 +12,22 @@ function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                    <a className="nav-link active" aria-current="page" href="#">Home</a>
+                        <Link className="nav-link {`}" aria-current="page" href="/">Home</Link>
                     </li>
                     <li className="nav-item">
-                    <a className="nav-link" href="#">About</a>
+                        <Link className="nav-link" href="/about">About</Link>
                     </li>
                     <li className="nav-item">
-                    <a className="nav-link" href="#">Projects</a>
+                        <Link className="nav-link" href="/education">Education</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" href="/organization">Organization</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" href="/project">Project</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" href="/contact">Contact</Link>
                     </li>
                 </ul>
                 </div>

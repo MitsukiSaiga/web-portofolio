@@ -2,13 +2,12 @@ import type { NextPage } from 'next'
 // import Head from 'next/head'
 // import Image from 'next/image'
 // import styles from '../styles/Home.module.css'
-import HelloPage from './hello'
+import HelloPage from './about'
 import HomePage from './home'
 const Home: NextPage = () => {
   return (
     <>
     <HomePage />
-    <HelloPage />
     </>
   )
 }
